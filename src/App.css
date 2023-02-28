@@ -1,0 +1,152 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+
+.container-typing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.typing {
+  font-size: 3em;
+  min-height: 80px;
+}
+
+.typing:last-child {
+  min-height: 100px;
+}
+
+.icon {
+  margin: 0 0.5em;
+  font-size: 50px;
+  color: #fff;
+  transition: .2s;
+  opacity: 0;
+  animation: pulse 4s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.icon:hover {
+  color: #666;
+  filter: drop-shadow(0 0 2em #666);
+}
+
+.clipboard-message {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-20%, -20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.clipboard-message.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+  animation: float-up 2s forwards;
+}
+
+.container-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1em 0;
+}
+
+@media screen and (max-width: 768px) {
+  .typing {
+    font-size: 2em;
+  }
+
+  .typing:last-child {
+    min-height: 125px;
+    font-size: 1.5em;
+  }
+
+  .container-icons {
+    flex-direction: column;
+  }
+
+  .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes float-up {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
