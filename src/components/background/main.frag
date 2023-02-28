@@ -2,7 +2,7 @@
 precision mediump float;
 #endif
 
-#define NUM_OCTAVES 4
+#define NUM_OCTAVES 3
 
 uniform float u_time;
 uniform vec2 u_resolution;
@@ -52,12 +52,6 @@ float fbm(vec2 position) {
   vec2 shift = vec2(100.0);
   
   mat2 rotation = mat2(cos(0.4), sin(0.4), -sin(0.5), cos(0.5));
-
-
-  vec2 mouse = u_mouse / u_resolution;
-  mouse = mouse * 2.0 - 1.0;
-
-  position += mouse * 0.05;
   for (int i = 0; i < NUM_OCTAVES; i++) {
 
     value += amplitude * noise(position);
@@ -103,11 +97,11 @@ void main(void){
     clamp(length(r.x),0.,-2.)
   );
   
-  vec3 waveColor=mix(
-    vec3(.43,.43,.59),
-    vec3(0.),
-    1.-f*f*f*f*f*f*f*f
-  );
+  // vec3 waveColor=mix(
+  //   vec3(.43,.43,.59),
+  //   vec3(0.),
+  //   1.-f*f*f*f*f*f*f*f
+  // );
   
   vec3 oceanColor=mix(
     vec3(.5,.5,.6),
@@ -115,5 +109,5 @@ void main(void){
     clamp(f*f*f*f+.4*f*f*f+.2*f*f+.2*sin(u_time*.2),0.,1.)
   );
   
-  gl_FragColor=vec4(mix(color,waveColor,.1),1.);
+  gl_FragColor=vec4(color,1.);
 }

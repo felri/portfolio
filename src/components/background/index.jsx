@@ -4,7 +4,6 @@ import vertexShader from "./main.vert";
 import fragmentShader from "./main.frag";
 import * as THREE from "three";
 
-
 function Backgroung() {
   const meshRef = useRef();
 
@@ -25,7 +24,7 @@ function Backgroung() {
   }, []);
 
   useFrame(({ clock }) => {
-    if(!meshRef.current) return;
+    if (!meshRef.current) return;
     meshRef.current.material.uniforms.u_time.value = clock.elapsedTime;
     meshRef.current.material.uniforms.u_mouse.value = mouse;
   });
@@ -51,7 +50,7 @@ function Backgroung() {
       />
     </mesh>
   );
-};
+}
 
 function CanvasWrapper() {
   return (
@@ -66,9 +65,7 @@ function CanvasWrapper() {
       }}
     >
       <Canvas>
-        <Suspense fallback={null}>
-          <Backgroung />
-        </Suspense>
+        <Backgroung />
       </Canvas>
     </div>
   );
