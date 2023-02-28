@@ -12,7 +12,7 @@ const Link = ({ icon, link, copyToClipboard }) => {
         </ClipboardMessage>
       ) : (
         <a href={link} target="_blank" rel="noopener noreferrer">
-          {icon} 
+          {icon}
         </a>
       )}
     </div>
@@ -95,7 +95,7 @@ export default function CV({ show, handleShowCv, handleHideCv }) {
         <div className="modal-header">
           <h2>Felipe Melo</h2>
           <div className="links">
-            {LINKS.map((link, index) => ( 
+            {LINKS.map((link, index) => (
               <Link key={index} {...link} />
             ))}
           </div>
@@ -112,9 +112,9 @@ export default function CV({ show, handleShowCv, handleHideCv }) {
             <div className="about-me">
               <p>
                 Experienced web developer with over 7 years of experience using
-                technologies such as <b>React</b>, <b>Redux</b>,{" "}
-                <b>React Native</b>, <b>Python</b>, <b>Node</b>, <b>Three.js</b>
-                , <b>D3.js</b> and <b>Docker</b>.
+                technologies such as <b>React</b>, <b>Redux</b>, <b>Three.js</b>
+                , <b>D3.js</b>, <b>React Native</b>, <b>Python</b>,{" "}
+                <b>Pandas</b>, <b>Node</b>, and <b>Docker</b>.
               </p>
               <p>
                 Committed to staying up-to-date with best practices and

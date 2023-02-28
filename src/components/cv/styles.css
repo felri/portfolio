@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 140vh;
+  max-height: 180vh;
 }
 
 .job {
@@ -158,5 +158,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 100vh;
+  }
+
+  .job {
+    padding: 5px;
+  }
+
+  .modal-header {
+    padding-bottom: 0;
   }
 }
