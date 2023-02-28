@@ -55,8 +55,8 @@ function App() {
         </Link>
         <Link href="https://www.linkedin.com/in/frcm/">
           <LinkedinOutlined className="icon" />
-        </Link>
-        <ClipboardMessage text="https://github.com/felri">
+        </Link>c
+        <ClipboardMessage text="felipercmelo@gmail.com">
           <MailOutlined className="icon" />
         </ClipboardMessage>
         <div className="modal-action" onClick={handleShowCv}>
