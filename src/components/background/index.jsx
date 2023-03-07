@@ -63,6 +63,7 @@ function CanvasWrapper() {
         left: 0,
         zIndex: -1,
       }}
+      
     >
       <Canvas>
         <Backgroung />
