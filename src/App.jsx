@@ -38,9 +38,7 @@ function App() {
         />
         <TypeAnimation
           sequence={[
-            3500,
-            "I'm a Software Developer",
-            2500,
+            2600,
             "Let's build something together!",
           ]}
           deletionSpeed={100}
