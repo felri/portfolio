@@ -8,6 +8,13 @@ import {
 
 export const PROJECTS = [
   {
+    title: "Penguins!",
+    link: "https://felri.github.io/penguins/",
+    description: [
+      "Do you like penguins? Do you like scatter plots?",
+    ],
+  },
+  {
     title: "Legible Data",
     link: "https://dadoslegiveis.lol/",
     description: [
