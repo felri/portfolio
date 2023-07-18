@@ -37,17 +37,22 @@ function App() {
           className="typing"
         />
         <TypeAnimation
-          sequence={[
-            2600,
-            "Let's build something together!",
-          ]}
+          sequence={[2600, "Let's build something together!"]}
           deletionSpeed={100}
           wrapper="div"
           cursor={false}
           className="typing"
         />
       </div>
+      <CV
+        show={showCv}
+        handleShowCv={handleShowCv}
+        handleHideCv={handleHideCv}
+      />
       <div className="container-icons">
+        <div className="modal-action" onClick={handleShowCv}>
+          <span className="icon">CV</span>
+        </div>
         <Link href="https://github.com/felri">
           <GithubOutlined className="icon" viewBox="0 0 1024 1024" />
         </Link>
@@ -57,9 +62,6 @@ function App() {
         <ClipboardMessage text="felipercmelo@gmail.com">
           <MailOutlined className="icon" />
         </ClipboardMessage>
-        <div className="modal-action" onClick={handleShowCv}>
-          <span className="icon">CV</span>
-        </div>
       </div>
       <CV
         show={showCv}

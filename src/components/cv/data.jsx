@@ -1,4 +1,3 @@
-
 import {
   GithubOutlined,
   LinkedinOutlined,
@@ -10,9 +9,7 @@ export const PROJECTS = [
   {
     title: "Penguins!",
     link: "https://felri.github.io/penguins/",
-    description: [
-      "Do you like penguins? Do you like scatter plots?",
-    ],
+    description: ["Do you like penguins? Do you like scatter plots?"],
   },
   {
     title: "Legible Data",
@@ -32,10 +29,27 @@ export const PROJECTS = [
 
 export const JOBS = [
   {
+    title: "Solo Software Engineer",
+    company: "MenuSimples",
+    link: "https://menusimples.site/",
+    period: "Mar 2021 - Present",
+    description: [
+      "Developed a Next app that allows users to create and manage their restaurant menus.",
+      "Implemented a CI/CD pipeline with GitHub Actions, enabling automatic and efficient builds, testing, and deployment of applications.",
+      "Implemented unit tests with Jest and React Testing Library.",
+      "Deployed applications to Heroku.",
+      "Implemented a Supabase database and authentication.",
+      "Implemented a Stripe payment system.",
+      "Implemented a SendGrid email system.",
+      "Implemented a Tailwind CSS design system.",
+      "Developed a Redux Toolkit state management system.",
+    ],
+  },
+  {
     title: "Senior Software Engineer",
     company: "Routable",
     link: "https://routable.com",
-    period: "Jun 2022 - Jan 2023",
+    period: "Jun 2022 - Mar 2023",
     description: [
       "Developed and maintained a high-traffic web app that handled thousands of international money transfers, utilizing React and Redux to create a seamless user experience.",
       "Implemented a thorough unit testing strategy, resulting in a stable and reliable application.",
@@ -117,4 +131,4 @@ export const LINKS = [
     icon: <FilePdfOutlined />,
     link: "felipe-melo-cv.pdf",
   },
-]
+];
