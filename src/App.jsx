@@ -36,13 +36,6 @@ function App() {
           cursor={false}
           className="typing"
         />
-        <TypeAnimation
-          sequence={[2600, "Let's build something together!"]}
-          deletionSpeed={100}
-          wrapper="div"
-          cursor={false}
-          className="typing"
-        />
       </div>
       <CV
         show={showCv}
