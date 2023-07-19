@@ -53,11 +53,6 @@ a {
 
 .typing {
   font-size: 3em;
-  min-height: 80px;
-}
-
-.typing:last-child {
-  min-height: 100px;
 }
 
 .icon {
@@ -90,11 +85,7 @@ a {
 @media screen and (max-width: 768px) {
   .typing {
     font-size: 2em;
-  }
-
-  .typing:last-child {
-    min-height: 125px;
-    font-size: 1.5em;
+    height: 2em;
   }
 
   .container-icons {

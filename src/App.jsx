@@ -31,7 +31,13 @@ function App() {
     <div className="App">
       <div className="container-typing">
         <TypeAnimation
-          sequence={["Hi", 1500, "I'm Felipe"]}
+          sequence={["Hi", 1500, "I'm Felipe,"]}
+          wrapper="div"
+          cursor={false}
+          className="typing"
+        />
+        <TypeAnimation
+          sequence={["", 2600, "a software engineer."]}
           wrapper="div"
           cursor={false}
           className="typing"
