@@ -3,7 +3,7 @@ import { ClipboardMessage } from "../utils";
 import { LINKS, JOBS, PROJECTS } from "./data";
 import "./styles.css";
 
-const Link = ({ icon, link, copyToClipboard }) => {
+const Link = ({ icon, link, copyToClipboard }: any) => {
   return (
     <div className="link">
       {copyToClipboard ? (
@@ -111,16 +111,27 @@ export default function CV({ show, handleShowCv, handleHideCv }) {
             <SectionTitle title="About me" />
             <div className="about-me">
               <p>
-                Experienced web developer with over 7 years of experience using
-                technologies such as <b>React</b>, <b>Redux</b>, <b>Three.js</b>
-                , <b>D3.js</b>, <b>React Native</b>, <b>Python</b>,{" "}
-                <b>Pandas</b>, <b>Node</b>, and <b>Docker</b>.
+                I am a highly motivated web developer with over 7 years of
+                experience specializing in frontend and backend. My expertise
+                lies in building robust applications using technologies such as
+                JavaScript, Python, and many others.
               </p>
               <p>
-                Committed to staying up-to-date with best practices and
-                continually improving development workflow.
+                Committed to leveraging modern development practices and staying
+                updated with the industry's evolving trends, my goal is to
+                create efficient, scalable, and maintainable software.
               </p>
             </div>
+            <SectionTitle title="Technical Skills" />
+            <ul>
+              <li>Frontend: React, Redux, Three.js, D3.js, Next</li>
+              <li>Backend: Node.js, Python, Pandas, FastApi</li>
+              <li>Mobile: React Native</li>
+              <li>Tools and Platforms: Docker, GitHub Actions, Heroku, AWS</li>
+              <li>Testing: Jest, React Testing Library, Cypress, Detox</li>
+              <li>Databases: Supabase, Postgresql, MySQL</li>
+              <li>Other: Git, Linux, Bash, Nginx, Webpack, Babel</li>
+            </ul>
             <SectionTitle title="Experience" />
             {JOBS.map((job, index) => (
               <Job
