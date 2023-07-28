@@ -23,7 +23,7 @@ export const PROJECTS = [
   },
   {
     title: "3D Sound Wave",
-    link: "https://felri.github.io/https://felri.github.io/waveform-r3f//",
+    link: "https://felri.github.io/waveform-r3f/",
     description: ["A 3D sound wave visualizer."],
   },
   {
