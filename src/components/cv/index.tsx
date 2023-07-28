@@ -99,11 +99,11 @@ export default function CV({ show, handleShowCv, handleHideCv }) {
               <Link key={index} {...link} />
             ))}
           </div>
-          <div onClick={handleHideCv} className="close-modal">
+          {/* <div onClick={handleHideCv} className="close-modal">
             close
             <br />
             <span>[esc]</span>
-          </div>
+          </div> */}
         </div>
 
         <div className="modal-body">
@@ -111,15 +111,13 @@ export default function CV({ show, handleShowCv, handleHideCv }) {
             <SectionTitle title="About me" />
             <div className="about-me">
               <p>
-                I am a highly motivated web developer with over 7 years of
-                experience specializing in frontend and backend. My expertise
-                lies in building robust applications using technologies such as
-                JavaScript, Python, and many others.
+                I am a software developer with over 7 years of experience
+                specializing in frontend. My expertise lies in building robust
+                applications using JavaScript, Python, and many others.
               </p>
               <p>
-                Committed to leveraging modern development practices and staying
-                updated with the industry's evolving trends, my goal is to
-                create efficient, scalable, and maintainable software.
+                My goal is to create efficient, scalable, and maintainable
+                software.
               </p>
             </div>
             <SectionTitle title="Technical Skills" />

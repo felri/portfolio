@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container-typing">
+      {/* <div className="container-typing">
         <TypeAnimation
           sequence={["Hi", 1500, "I'm Felipe,"]}
           wrapper="div"
@@ -61,9 +61,9 @@ function App() {
         <ClipboardMessage text="felipercmelo@gmail.com">
           <MailOutlined className="icon" />
         </ClipboardMessage>
-      </div>
+      </div> */}
       <CV
-        show={showCv}
+        show={true}
         handleShowCv={handleShowCv}
         handleHideCv={handleHideCv}
       />

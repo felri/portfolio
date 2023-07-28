@@ -7,6 +7,26 @@ import {
 
 export const PROJECTS = [
   {
+    title: "MenuSimples",
+    link: "https://menusimples.site/",
+    description: [
+      "Developed a Next app that allows users to create and manage their restaurant menus.",
+      "Implemented a CI/CD pipeline with GitHub Actions, enabling automatic and efficient builds, testing, and deployment of applications.",
+      "Implemented unit tests with Jest and React Testing Library.",
+      "Deployed applications to Heroku.",
+      "Implemented a Supabase database and authentication.",
+      "Implemented a Stripe payment system.",
+      "Implemented a SendGrid email system.",
+      "Implemented a Tailwind CSS design system.",
+      "Developed a Redux Toolkit state management system.",
+    ],
+  },
+  {
+    title: "3D Sound Wave",
+    link: "https://felri.github.io/https://felri.github.io/waveform-r3f//",
+    description: ["A 3D sound wave visualizer."],
+  },
+  {
     title: "Penguins!",
     link: "https://felri.github.io/penguins/",
     description: ["Do you like penguins? Do you like scatter plots?"],
@@ -28,23 +48,6 @@ export const PROJECTS = [
 ];
 
 export const JOBS = [
-  {
-    title: "Solo Software Engineer",
-    company: "MenuSimples",
-    link: "https://menusimples.site/",
-    period: "Mar 2021 - Present",
-    description: [
-      "Developed a Next app that allows users to create and manage their restaurant menus.",
-      "Implemented a CI/CD pipeline with GitHub Actions, enabling automatic and efficient builds, testing, and deployment of applications.",
-      "Implemented unit tests with Jest and React Testing Library.",
-      "Deployed applications to Heroku.",
-      "Implemented a Supabase database and authentication.",
-      "Implemented a Stripe payment system.",
-      "Implemented a SendGrid email system.",
-      "Implemented a Tailwind CSS design system.",
-      "Developed a Redux Toolkit state management system.",
-    ],
-  },
   {
     title: "Senior Software Engineer",
     company: "Routable",
