@@ -67,22 +67,22 @@ export const JOBS = [
     period: "Sep 2021 - Jun 2022 ",
     description: [
       "Worked on the development of a chat app, including the implementation of dark mode and the conversion of 20+ screens from class components to functional components.",
-      "Implemented unit tests covering 80% of code.",
+      "Implemented unit tests",
     ],
   },
   {
-    title: "Senior Software Engineer",
+    title: "Fullstack Developer",
     company: "Jexo",
     link: "https://jexo.io/",
     period: "Mar 2021 - Sep 2021",
     description: [
-      "Solo developed a React plugin for the Jira ecosystem and a Jira plugin for a poker planning game using GraphQL subscriptions to handle changes between peers.",
-      "Implemented unit tests covering 80% of code.",
+      "Developed a React plugin for the Jira ecosystem and a Jira plugin for a poker planning game using GraphQL subscriptions to handle changes between peers.",
+      "Implemented unit tests",
       "Added new features to the Jexo platform, including a new UI for the Jira plugin and new features for the poker planning game.",
     ],
   },
   {
-    title: "Senior Software Engineer",
+    title: "Fullstack Developer",
     company: "Vivo",
     link: "https://www.vivo.com.br/",
     period: "Aug 2020 - Sep 2021",
@@ -92,7 +92,7 @@ export const JOBS = [
     ],
   },
   {
-    title: "Senior Frontend Developer",
+    title: "React Native Developer,",
     company: "BovControl",
     link: "https://platform.bovcontrol.com/",
     period: "Feb 2020 - Aug 2020",
@@ -103,7 +103,7 @@ export const JOBS = [
     ],
   },
   {
-    title: "Frontend Engineer",
+    title: "Mobile/Frontend Developer",
     company: "Jaime Camara",
     link: "https://www.gjccorp.com.br/",
     period: "Feb 2019 - Jun 2020",
